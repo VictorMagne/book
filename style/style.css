@@ -308,6 +308,8 @@ object-fit: cover;
 }
 
 
+
+
 .vignette-orchestra{
   margin :15px;
   width :25%;
@@ -332,4 +334,21 @@ object-fit: cover;
   flex-wrap: wrap;
   width: 100%;
   margin:auto;
+}
+
+/*
+
+MUSIC */
+
+
+.lecteur{
+  width:50%;
+  height:50px;
+  background-color: yellow;
+}
+
+.clickedMusic{
+  width:50%;
+  height:50px;
+  background-color: lime;
 }

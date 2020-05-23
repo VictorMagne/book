@@ -1,3 +1,7 @@
+  son1 = new Audio("./music/the_void_is_full_of_hope.wav");
+
+
+
 $(document).ready(function(){
   $(".legende").hide()
   $(".vignette").hover(hoverVignetteIn,hoverVignetteOut)
@@ -16,6 +20,9 @@ $(document).ready(function(){
 
 //  $(window).scroll(headerScroll)
   //$(window).off("scroll",headerNoScroll)
+
+  $(".lecteur").click(clickMusic)
+  $(".clickedMusic").click(stop)
 
 });
 
@@ -109,3 +116,14 @@ function hoverVignetteOrIn(){
 // function hoverVignetteOrOut(){
 //   $(".vignette-orchestra-zoom").addClass("vignette-orchestra")
 // }
+
+
+function clickMusic(){
+  son1.play();
+  $(this).addClass("clickedMusic");
+}
+
+function stop(){
+  son1.stop();
+  $(this).removeClass("clickedMusic");
+}
